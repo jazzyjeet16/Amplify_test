@@ -16,7 +16,7 @@ const InteractivePage = () => {
         </button>
         <button 
           className="px-4 py-2 bg-white text-teal-600 rounded-lg shadow-lg hover:bg-gray-200 transition"
-          onClick={() => setCount(count - 1)}
+          onClick={() => setCount(count>0 ?count - 1:0)}
         >
           Decrease
         </button>
